@@ -91,7 +91,7 @@ async function getWeather() {
         weatherInfo.className = "weather-info";
 
         img.src = `https://api.met.no/images/weathericons/png/${currentWeatherData.data.next_1_hours.summary.symbol_code}.png`;
-        img.alt = currentWeatherData.symbol;
+        img.alt = currentWeatherData.data.next_1_hours.summary.symbol_code;
         temp.innerHTML = `<strong>Temperature:</strong> ${currentWeatherData.data.instant.details.air_temperature}°C`;
         humidity.innerHTML = `<strong>Humidity:</strong> ${currentWeatherData.data.instant.details.relative_humidity}%`;
         windSpeed.innerHTML = `<strong>Wind Speed:</strong> ${currentWeatherData.data.instant.details.wind_speed} m/s`;
