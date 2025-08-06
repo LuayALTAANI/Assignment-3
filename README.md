@@ -50,8 +50,6 @@ weather-app/
 
 ## ⚙️ How to Run Locally
 
-1. Clone the repository:
-
 git clone https://github.com/LuayALTAANI/Assignment-3.git
 
 cd Assignment-3
