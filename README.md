@@ -1,5 +1,6 @@
 # 🌦️ Weather App - Assignment 3
 - https://luayaltaani.github.io/Assignment-3/
+  
 A simple JavaScript weather application that displays the current weather and a 9-day forecast for any city using:
 
 - 📍 [OpenStreetMap Nominatim API](https://nominatim.openstreetmap.org/) — for city geolocation
