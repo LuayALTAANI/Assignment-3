@@ -68,6 +68,45 @@ async function getWeather() {
             }
         }
 
+
+
+        // Display current weather
+        const currentWeatherCard = document.createElement("div");
+        const img = document.createElement("img");
+        const temp = document.createElement("p");
+        const humidity = document.createElement("p");
+        const windSpeed = document.createElement("p");
+        const pressure = document.createElement("p");
+        const cloudCover = document.createElement("p");
+        const windDirection = document.createElement("p");
+        const weatherInfo = document.createElement("div");
+
+        currentWeatherCard.className = "current-weather";
+        weatherInfo.className = "weather-info";
+
+        img.src = `https://api.met.no/images/weathericons/png/${currentWeatherData.data.next_1_hours.summary.symbol_code}.png`;
+        img.alt = currentWeatherData.symbol;
+        temp.innerHTML = `<strong>Temperature:</strong> ${currentWeatherData.data.instant.details.air_temperature}°C`;
+        humidity.innerHTML = `<strong>Humidity:</strong> ${currentWeatherData.data.instant.details.relative_humidity}%`;
+        windSpeed.innerHTML = `<strong>Wind Speed:</strong> ${currentWeatherData.data.instant.details.wind_speed} m/s`;
+        pressure.innerHTML = `<strong>Pressure:</strong> ${currentWeatherData.data.instant.details.air_pressure_at_sea_level} hPa`;
+        cloudCover.innerHTML = `<strong>Cloud Cover:</strong> ${currentWeatherData.data.instant.details.cloud_area_fraction} %`;
+        windDirection.innerHTML = `<strong>Wind Direction:</strong> ${currentWeatherData.data.instant.details.wind_from_direction}°`;
+
+        weatherInfo.appendChild(temp);
+        weatherInfo.appendChild(pressure);
+        weatherInfo.appendChild(humidity);
+        weatherInfo.appendChild(cloudCover);
+        weatherInfo.appendChild(windSpeed);
+        weatherInfo.appendChild(windDirection);
+
+        currentWeatherCard.appendChild(document.createElement("h2")).textContent = "Current Weather";
+        currentWeatherCard.appendChild(img);
+        currentWeatherCard.appendChild(weatherInfo);
+
+        currentWeather.appendChild(currentWeatherCard);
+
+        // Display weather cards
         dailyData.forEach(day => {
             const card = document.createElement("div");
             const dateC = document.createElement("div");
