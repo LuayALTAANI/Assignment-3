@@ -40,7 +40,9 @@ A simple JavaScript weather application that displays the current weather and a 
 
 weather-app/
 ├── index.html # Main web page
+
 ├── style.css # Styling for the UI
+
 └── app.js # JavaScript to handle logic and API calls
 
 ---
@@ -50,7 +52,9 @@ weather-app/
 1. Clone the repository:
 
 git clone https://github.com/LuayALTAANI/Assignment-3.git
+
 cd Assignment-3
+
 Open the index.html file in your browser:
 
 🧠 How It Works
