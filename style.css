@@ -1,0 +1,105 @@
+ body {
+     font-family: Arial, sans-serif;
+     background: #f0f4f8;
+     padding: 20px;
+     text-align: center;
+ }
+
+ h1 {
+     color: #333;
+ }
+
+ input[type="text"] {
+     padding: 10px;
+     width: 250px;
+     font-size: 16px;
+ }
+
+ button {
+     padding: 10px 15px;
+     font-size: 16px;
+     background: #0077cc;
+     color: white;
+     border: none;
+     cursor: pointer;
+     margin-left: 10px;
+ }
+
+ /* ---------- Current Weather ---------- */
+ .current-weather {
+     background: #fffcfc;
+     padding: 5px 30px;
+     border-radius: 16px;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+     width: 80%;
+     margin: 20px auto;
+     text-align: center;
+ }
+
+ .current-weather h2 {
+     color: #222;
+     font-size: 24px;
+     margin-bottom: 20px;
+ }
+
+ .current-weather img {
+     background-color: #f0f4f8;
+     border-radius: 50%;
+     padding: 10px;
+     width: 80px;
+     height: 80px;
+     margin-bottom: 15px;
+ }
+
+ .weather-info {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 12px 20px;
+     font-size: 16px;
+     color: #333;
+     margin: 20px;
+ }
+
+ .weather-info p {
+     margin: 0;
+ }
+
+ .weather-info p strong {
+     color: #007acc;
+ }
+
+ /* --------weather cards--------- */
+ #weather {
+     margin-top: 30px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+
+ .day {
+     background: white;
+     padding: 20px;
+     border-radius: 10px;
+     width: 200px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .day img {
+     width: 50px;
+     height: 50px;
+ }
+
+ .temp {
+     font-size: 20px;
+     margin: 10px 0;
+ }
+
+ .date {
+     font-weight: bold;
+ }
+
+ .alert {
+     color: red;
+     margin-top: 20px;
+ }
