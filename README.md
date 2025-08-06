@@ -39,6 +39,7 @@ A simple JavaScript weather application that displays the current weather and a 
 ## 📁 Project Structure
 
 weather-app/
+
 ├── index.html # Main web page
 
 ├── style.css # Styling for the UI
