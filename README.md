@@ -56,7 +56,7 @@ cd Assignment-3
 
 Open the index.html file in your browser:
 
-🧠 How It Works
+## 🧠 How It Works
 User inputs a city name.
 
 The app fetches coordinates using OpenStreetMap (Nominatim).
