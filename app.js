@@ -28,6 +28,12 @@ getWeatherBtn.addEventListener("click", getWeather);
 
 // Function to fetch weather data based on the city input
 async function getWeather() {
+    // Clear previous results
+    weatherContainer.innerHTML = "";
+    currentWeather.innerHTML = "";
+    alertMsg.textContent = "";
+
+    // Get the city name from the input field
     const city = cityInput.value.trim();
     weatherContainer.innerHTML = "";
     alertMsg.textContent = "";
